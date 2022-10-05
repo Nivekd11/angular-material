@@ -1,0 +1,70 @@
+.contenedor-modal{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    background-color: rgb(18, 17, 23);
+    position: relative;
+    img{
+        width: 100%;
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+        margin-top: -3rem;
+    }
+    .contenedor-contenido{
+        padding: 10px;
+        h1{
+            padding: 10px;
+            width: 100%;
+            margin-left: -10px;
+            margin-top: -4.2rem;
+            background-color: rgba(0, 0, 0, 0.42);
+        }
+    }
+    button{
+        outline: inherit;
+        border: none;
+        background-color: rgba(240, 255, 255, 0);
+        font-size: 30px;
+        margin: 0;
+        padding: 0 !important;
+    }
+    .btn-close{
+        position: absolute;
+        right: 10px;
+        color: rgba(220, 220, 220, 0.672);
+        
+        
+
+    }
+    .contenedor-interaccion{
+        display: flex;
+        flex-direction: row;
+        column-gap: 1rem;
+        margin-top: 30px;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .red-button{
+        //color: #ff3700;
+        filter: invert(57%) sepia(14%) saturate(5249%) hue-rotate(320deg) brightness(109%) contrast(102%);
+      
+    }
+
+    .blue-button{
+       filter: invert(30%) sepia(86%) saturate(4102%) hue-rotate(208deg) brightness(100%) contrast(111%);
+       //color: rgb(0, 83, 250);
+    }
+    .contendor-extra{
+        display: flex;
+        flex-direction: row;
+        column-gap: 1rem;
+    }
+    
+}

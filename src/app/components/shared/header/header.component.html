@@ -1,0 +1,63 @@
+<mat-drawer-container class="example-container" autosize>
+  <div class="example-sidenav-content">
+    <mat-toolbar color="primary">
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with menu icon"
+        mat-button
+        (click)="drawer.toggle()"
+      >
+        <mat-icon>menu</mat-icon>
+        <mat-sidenav-container></mat-sidenav-container>
+      </button>
+      <img src="assets/img/netflix.png" alt="" width="100px">
+      <span class="example-spacer"></span>
+      <button
+        mat-icon-button
+        class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+      >
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </div>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <div class="img-side">
+      <img width="300px" src="assets/img/wallhaven-3kj51d.jpg" alt="" />
+    </div>
+    <mat-list role="list">
+      <mat-list-item
+        role="listitem"
+        routerLink="peliculas/main"
+        routerLinkActive="color"
+        >Principal</mat-list-item
+      >
+      <mat-list-item
+        role="listitem"
+        routerLink="peliculas/terror"
+        routerLinkActive="color"
+        >Terror</mat-list-item
+      >
+      <mat-list-item
+        role="listitem"
+        routerLink="peliculas/accion"
+        routerLinkActive="color"
+        >Accion</mat-list-item
+      >
+      <mat-list-item
+        role="listitem"
+        routerLink="peliculas/animacion"
+        routerLinkActive="color"
+        >Animación</mat-list-item
+      >
+    </mat-list>
+  </mat-drawer>
+</mat-drawer-container>

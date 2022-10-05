@@ -1,0 +1,12 @@
+<div class="contenedor-peliculas">
+    <h2>Terror</h2>
+    <mat-grid-list cols="7"  rowHeight="300" gutterSize="20">
+        <ng-container *ngFor="let pelicula of peliculas; let i = index">
+            <mat-grid-tile colspan="1">
+                <img [src]="pelicula.img" alt="" (click)="openDialog(i)">
+            </mat-grid-tile>
+        </ng-container>
+    </mat-grid-list>
+
+
+</div>
